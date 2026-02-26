@@ -77,3 +77,17 @@ Please cite PyRoki if you find this work useful for your research:
 ```
 
 Thanks!
+
+01_basic_ik.py：单臂基础 IK，拖动一个末端目标位姿，机械臂实时跟随。
+02_bimanual_ik.py：双臂 IK（YuMi），两个末端目标同时约束。
+03_mobile_ik.py：移动底盘 + 机械臂联合 IK，底盘在平面内移动并允许偏航。
+04_ik_with_coll.py：带避障 IK，和地面/球体障碍物保持无碰。
+05_ik_with_manipulability.py：IK + 可操作度优化，兼顾到达目标与灵巧性。
+06_online_planning.py：在线重规划，持续输出短时域轨迹并随障碍变化更新。
+07_trajopt.py：离线轨迹优化（如越过墙体），整段轨迹满足运动与碰撞约束。
+08_ik_with_mimic_joints.py：仿真含 mimic joints 的链条，验证 IK 对联动关节支持。
+09_hand_retargeting.py：手部动作重定向（MANO → Shadow Hand）基础版。
+10_humanoid_retargeting.py：人体关键点动作重定向到 G1 人形机器人基础版。
+11_hand_retargeting_fancy.py：手部重定向增强版，加入接触保持等代价项。
+12_humanoid_retargeting_fancy.py：人形重定向增强版，加入足底接触、防打滑、世界碰撞等约束。
+13_ik_with_locked_joints.py：可锁定关节的 IK，支持动态锁/解锁并查看误差。

@@ -9,7 +9,8 @@ To build the documentation:
 1. Install the documentation dependencies:
 
    ```bash
-   pip install -r docs/requirements.txt
+   python3 -m pip install --user -r docs/requirements.txt
+   export PATH="$HOME/.local/bin:$PATH"
    ```
 
 2. Build the documentation:
